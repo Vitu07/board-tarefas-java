@@ -1,0 +1,46 @@
+mai. 10, 2025 3:13:22 PM liquibase.changelog
+INFORMAÇÕES: Reading resource: db/changelog/migrations/db.changelog-202505101406.sql
+mai. 10, 2025 3:13:22 PM liquibase.changelog
+INFORMAÇÕES: Creating database history table with name: board.DATABASECHANGELOG
+mai. 10, 2025 3:13:22 PM liquibase.changelog
+INFORMAÇÕES: Reading from board.DATABASECHANGELOG
+mai. 10, 2025 3:13:22 PM liquibase.lockservice
+INFORMAÇÕES: Successfully acquired change log lock
+mai. 10, 2025 3:13:22 PM liquibase.command
+INFORMAÇÕES: Using deploymentId: 6900802788
+mai. 10, 2025 3:13:22 PM liquibase.changelog
+INFORMAÇÕES: Reading from board.DATABASECHANGELOG
+Running Changeset: db/changelog/migrations/db.changelog-202505101406.sql::202505101406::morais
+mai. 10, 2025 3:13:22 PM liquibase.changelog
+INFORMAÇÕES: Custom SQL executed
+mai. 10, 2025 3:13:22 PM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db.changelog-202505101406.sql::202505101406::morais ran successfully in 71ms
+
+UPDATE SUMMARY
+Run:                          1
+Previously run:               0
+Filtered out:                 0
+-------------------------------
+Total change sets:            1
+
+mai. 10, 2025 3:13:22 PM liquibase.util
+INFORMAÇÕES: UPDATE SUMMARY
+mai. 10, 2025 3:13:22 PM liquibase.util
+INFORMAÇÕES: Run:                          1
+mai. 10, 2025 3:13:22 PM liquibase.util
+INFORMAÇÕES: Previously run:               0
+mai. 10, 2025 3:13:22 PM liquibase.util
+INFORMAÇÕES: Filtered out:                 0
+mai. 10, 2025 3:13:22 PM liquibase.util
+INFORMAÇÕES: -------------------------------
+mai. 10, 2025 3:13:22 PM liquibase.util
+INFORMAÇÕES: Total change sets:            1
+mai. 10, 2025 3:13:22 PM liquibase.util
+INFORMAÇÕES: Update summary generated
+mai. 10, 2025 3:13:22 PM liquibase.command
+INFORMAÇÕES: Update command completed successfully.
+Liquibase: Update has been successful. Rows affected: 1
+mai. 10, 2025 3:13:22 PM liquibase.lockservice
+INFORMAÇÕES: Successfully released change log lock
+mai. 10, 2025 3:13:22 PM liquibase.command
+INFORMAÇÕES: Command execution complete
