@@ -1,60 +1,67 @@
-mai. 10, 2025 3:52:43 PM liquibase.changelog
+mai. 17, 2025 8:38:38 AM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db.changelog-202505101406.sql
-mai. 10, 2025 3:52:43 PM liquibase.changelog
+mai. 17, 2025 8:38:38 AM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db.changelog-202505101519.sql
-mai. 10, 2025 3:52:43 PM liquibase.changelog
+mai. 17, 2025 8:38:38 AM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db.changelog-202505101532.sql
-mai. 10, 2025 3:52:43 PM liquibase.changelog
+mai. 17, 2025 8:38:38 AM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db.changelog-202505101538.sql
-mai. 10, 2025 3:52:43 PM liquibase.changelog
+mai. 17, 2025 8:38:38 AM liquibase.changelog
+INFORMAÇÕES: Creating database history table with name: board.DATABASECHANGELOG
+mai. 17, 2025 8:38:38 AM liquibase.changelog
 INFORMAÇÕES: Reading from board.DATABASECHANGELOG
-mai. 10, 2025 3:52:43 PM liquibase.lockservice
+mai. 17, 2025 8:38:38 AM liquibase.lockservice
 INFORMAÇÕES: Successfully acquired change log lock
-mai. 10, 2025 3:52:43 PM liquibase.command
-INFORMAÇÕES: Using deploymentId: 6903163616
-mai. 10, 2025 3:52:43 PM liquibase.changelog
+mai. 17, 2025 8:38:38 AM liquibase.command
+INFORMAÇÕES: Using deploymentId: 7481918660
+mai. 17, 2025 8:38:38 AM liquibase.changelog
 INFORMAÇÕES: Reading from board.DATABASECHANGELOG
+Running Changeset: db/changelog/migrations/db.changelog-202505101406.sql::202505101406::morais
+mai. 17, 2025 8:38:38 AM liquibase.changelog
+INFORMAÇÕES: Custom SQL executed
+mai. 17, 2025 8:38:38 AM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db.changelog-202505101406.sql::202505101406::morais ran successfully in 46ms
 Running Changeset: db/changelog/migrations/db.changelog-202505101519.sql::202505101406::morais
-mai. 10, 2025 3:52:43 PM liquibase.changelog
+mai. 17, 2025 8:38:38 AM liquibase.changelog
 INFORMAÇÕES: Custom SQL executed
-mai. 10, 2025 3:52:43 PM liquibase.changelog
-INFORMAÇÕES: ChangeSet db/changelog/migrations/db.changelog-202505101519.sql::202505101406::morais ran successfully in 57ms
+mai. 17, 2025 8:38:38 AM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db.changelog-202505101519.sql::202505101406::morais ran successfully in 47ms
 Running Changeset: db/changelog/migrations/db.changelog-202505101532.sql::202505101406::morais
-mai. 10, 2025 3:52:43 PM liquibase.changelog
+mai. 17, 2025 8:38:38 AM liquibase.changelog
 INFORMAÇÕES: Custom SQL executed
-mai. 10, 2025 3:52:43 PM liquibase.changelog
-INFORMAÇÕES: ChangeSet db/changelog/migrations/db.changelog-202505101532.sql::202505101406::morais ran successfully in 50ms
+mai. 17, 2025 8:38:38 AM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db.changelog-202505101532.sql::202505101406::morais ran successfully in 45ms
 Running Changeset: db/changelog/migrations/db.changelog-202505101538.sql::202505101406::morais
-mai. 10, 2025 3:52:43 PM liquibase.changelog
+mai. 17, 2025 8:38:38 AM liquibase.changelog
 INFORMAÇÕES: Custom SQL executed
-mai. 10, 2025 3:52:43 PM liquibase.changelog
-INFORMAÇÕES: ChangeSet db/changelog/migrations/db.changelog-202505101538.sql::202505101406::morais ran successfully in 55ms
+mai. 17, 2025 8:38:38 AM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db.changelog-202505101538.sql::202505101406::morais ran successfully in 46ms
 
 UPDATE SUMMARY
-Run:                          3
-Previously run:               1
+Run:                          4
+Previously run:               0
 Filtered out:                 0
 -------------------------------
 Total change sets:            4
 
-mai. 10, 2025 3:52:43 PM liquibase.util
+mai. 17, 2025 8:38:38 AM liquibase.util
 INFORMAÇÕES: UPDATE SUMMARY
-mai. 10, 2025 3:52:43 PM liquibase.util
-INFORMAÇÕES: Run:                          3
-mai. 10, 2025 3:52:43 PM liquibase.util
-INFORMAÇÕES: Previously run:               1
-mai. 10, 2025 3:52:43 PM liquibase.util
+mai. 17, 2025 8:38:38 AM liquibase.util
+INFORMAÇÕES: Run:                          4
+mai. 17, 2025 8:38:38 AM liquibase.util
+INFORMAÇÕES: Previously run:               0
+mai. 17, 2025 8:38:38 AM liquibase.util
 INFORMAÇÕES: Filtered out:                 0
-mai. 10, 2025 3:52:43 PM liquibase.util
+mai. 17, 2025 8:38:38 AM liquibase.util
 INFORMAÇÕES: -------------------------------
-mai. 10, 2025 3:52:43 PM liquibase.util
+mai. 17, 2025 8:38:38 AM liquibase.util
 INFORMAÇÕES: Total change sets:            4
-mai. 10, 2025 3:52:43 PM liquibase.util
+mai. 17, 2025 8:38:38 AM liquibase.util
 INFORMAÇÕES: Update summary generated
-mai. 10, 2025 3:52:43 PM liquibase.command
+mai. 17, 2025 8:38:38 AM liquibase.command
 INFORMAÇÕES: Update command completed successfully.
-Liquibase: Update has been successful. Rows affected: 3
-mai. 10, 2025 3:52:43 PM liquibase.lockservice
+Liquibase: Update has been successful. Rows affected: 4
+mai. 17, 2025 8:38:38 AM liquibase.lockservice
 INFORMAÇÕES: Successfully released change log lock
-mai. 10, 2025 3:52:43 PM liquibase.command
+mai. 17, 2025 8:38:38 AM liquibase.command
 INFORMAÇÕES: Command execution complete
