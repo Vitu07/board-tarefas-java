@@ -32,8 +32,8 @@ public class CardDAO {
         return entity;
     }
 
-    public void moveToColumn(final Long cardId, final Long columnId) throws SQLException{
-        var sql = "UPDATE CARDS SET board_column_id ? WHERE = id = ?;";
+    public void moveToColumn(final Long columnId, final Long cardId) throws SQLException{
+        var sql = "UPDATE CARDS SET board_column_id = ? WHERE id = ?;";
         try(var statement = connection.prepareStatement(sql)){
             var i = 1;
             statement.setLong(i++, columnId );
@@ -52,8 +52,8 @@ public class CardDAO {
                        b.block_reason,
                        c.board_column_id,
                        bc.name,
-                       (SELECT COUNT (sub_b.id)
-                                FROM BLOCKS sub_b
+                       (SELECT COUNT(sub_b.id)
+                                 FROM BLOCKS sub_b
                                WHERE sub_b.card_id = c.id) blocks_amount
                    FROM CARDS c
                    LEFT JOIN BLOCKS b

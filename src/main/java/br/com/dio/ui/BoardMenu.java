@@ -18,7 +18,7 @@ import static br.com.dio.persistence.config.ConnectionConfig.getConnection;
 @AllArgsConstructor
 public class BoardMenu {
 
-    private final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in).useDelimiter("\n");
 
     private final  BoardEntity entity;
 
@@ -66,7 +66,7 @@ public class BoardMenu {
         card.setDescription(scanner.next());
         card.setBoardColumn(entity.getInitialColumn());
         try (var connection = getConnection()){
-            new CardService(connection).insert(card);
+            new CardService(connection).create(card);
         }
     }
 
@@ -93,11 +93,21 @@ public class BoardMenu {
                 .toList();
         try(var connection = getConnection()){
             new CardService(connection).block(cardId, reason, boardColumnsInfo);
+        } catch (RuntimeException ex){
+            System.out.println(ex.getMessage());
         }
-
     }
 
     private void unblockCard() throws SQLException {
+        System.out.println("Informe o id do card que será desbloqueado");
+        var cardId = scanner.nextLong();
+        System.out.println("Informe o motivo do desbloqueio do card");
+        var reason = scanner.next();
+        try(var connection = getConnection()){
+            new CardService(connection).unblock(cardId, reason);
+        } catch (RuntimeException ex){
+            System.out.println(ex.getMessage());
+        }
     }
 
     private void cancelCard() throws SQLException {
@@ -151,10 +161,10 @@ public class BoardMenu {
             new CardQueryService(connection).findById(selectedCardId)
                     .ifPresentOrElse(
                             c -> {
-                                System.out.printf("Card %s - %s.\n", c.id(), c.description());
+                                System.out.printf("Card %s - %s.\n", c.id(), c.title());
                                 System.out.printf("Descrição: %s\n", c.description());
                                 System.out.println(c.blocked() ?
-                                        "Está bloqueado. motivo %s" + c.blockReason() :
+                                        "Está bloqueado. motivo " + c.blockReason() :
                                         "Não está bloqueado");
                                 System.out.printf("Já foi bloqueado %s vezes\n", c.blocksAmount());
                                 System.out.printf("Está no momento na coluna %s - %s\n", c.columnId(), c.columnName());
